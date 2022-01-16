@@ -58,8 +58,6 @@ export let loader: LoaderFunction = async ({ request }) => {
   return {
     ENV: {
       SOME_SECRET: process?.env?.SOME_SECRET,
-      SUPABASE_URL: process?.env?.SUPABASE_URL,
-      SUPABASE_KEY: process?.env?.SUPABASE_KEY,
     },
     data: 'some',
   };

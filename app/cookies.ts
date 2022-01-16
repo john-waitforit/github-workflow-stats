@@ -7,7 +7,3 @@ const cookieOptions: CookieOptions = {
   sameSite: 'lax',
   maxAge: 604_800,
 };
-
-export let supabaseToken = createCookie('sb:token', {
-  ...cookieOptions,
-});
