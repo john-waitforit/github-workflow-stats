@@ -1,6 +1,5 @@
 import * as React from 'react';
 import {
-  Link,
   Links,
   LiveReload,
   Meta,
@@ -10,7 +9,6 @@ import {
   useCatch,
   useLocation,
   useLoaderData,
-  useMatches,
 } from 'remix';
 import type { LinksFunction, LoaderFunction } from 'remix';
 
@@ -71,8 +69,6 @@ function Document({
   title?: string;
 }) {
   let data = useLoaderData();
-  const matches = useMatches();
-  // const useWhenSomethingIsTrue = matches.some(match => match.handle && match.handle?.something)
   return (
     <html lang="en">
       <head>
