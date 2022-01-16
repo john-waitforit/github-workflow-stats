@@ -111,3 +111,18 @@ dist
 !.yarn/sdks
 !.yarn/versions
 .pnp.*
+
+# MacOS files
+.DS_Store 
+
+# Remix files
+
+.cache
+.vercel
+.output
+.env
+public/build
+api/_build
+api/build
+build
+app/styles/app.css
